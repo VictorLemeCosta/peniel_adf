@@ -270,6 +270,10 @@
         background-size: 150%;
         height: 500px;
     }
+
+    .localizacao iframe {
+        height: 300px;
+    }
 }
 
 @media screen and (max-width: 720px) {
@@ -278,7 +282,7 @@
     }
 
     .logo img{
-        margin-left: 0;
+        margin-left: 0%;
     }
 
     .menu {
@@ -313,5 +317,14 @@
     .banner {
         background-size: cover;
     }
+
+    .localizacao p {
+        font-size: 12px;
+    }
 }
 
+@media screen and (max-width: 490px) {
+    .localizacao iframe {
+        height: 200px;
+    }
+}
