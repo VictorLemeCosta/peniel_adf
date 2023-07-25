@@ -10,16 +10,21 @@
     <title>Peniel</title>
 </head>
 <body>
-    <div class="topo">
+    <div class="topo" id="topo">
         <div class="centraliza-secao centraliza-topo">
             <div class="logo">
-                <a href="./index.html"><img src="./assets/logo.png" alt="Logo Peniel"></a>
+                <a href="./index.html"><img src="./assets/logo.png" alt="Logo Peniel" id="logo"></a>
             </div>
-            <div class="menu">
-                <a href="#sobre-nos">SOBRE NÓS</a>
-                <a href="#galeria">GALERIA</a>
-                <a href="#agenda">AGENDA</a>
-                <a href="#contatos">CONTATOS</a>
+            <nav class="menu-desktop" id="menu">
+                <ul type="none">
+                    <li><a href="#sobre-nos" id="botao1">SOBRE NÓS</a></li>
+                    <li><a href="#galeria" id="botao2">GALERIA</a></li>
+                    <li><a href="#agenda" id="botao3">AGENDA</a></li>
+                    <li><a href="#contatos" id="botao4">CONTATOS</a></li>
+                </ul>
+              </nav>
+            <div class="menu-mobile" id="menu-mobile">
+                <img src="./assets/menu-fechado.png" id="btnMenu" onclick="trocarImagem()">
             </div>
         </div>
     </div>
@@ -113,5 +118,6 @@
             <a href="https://www.facebook.com/coralpenieladf" target="_blank"><img src="./assets/facebook-colorido.png"></a>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
