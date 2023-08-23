@@ -104,4 +104,4 @@ setInterval( function(){
     if (slideCounter > 4) {
         slideCounter = 1;
     }
-}, 4000)
+}, 2500)
