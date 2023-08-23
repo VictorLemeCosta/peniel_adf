@@ -1,6 +1,7 @@
 'use strict'
 
 let open = false
+let slideCounter = 1;
 
 document.querySelector('#btnMenu').addEventListener('click', e => {
     open = !open;
@@ -93,4 +94,14 @@ function trocarImagem() {
         return;
     }
   }
-  document.getElementById("btnMenu").addEventListener("click", trocarImagem);
+
+document.getElementById("btnMenu").addEventListener("click", trocarImagem);
+
+setInterval( function(){
+    document.getElementById("radio" + slideCounter).checked = true;
+    slideCounter++;
+
+    if (slideCounter > 4) {
+        slideCounter = 1;
+    }
+}, 4000)

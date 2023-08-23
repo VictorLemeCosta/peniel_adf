@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/produto-venda.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Camisa Branca Peniel</title>
+</head>
+<body>
+    <div class="topo" id="topo">
+        <div class="centraliza-secao centraliza-topo">
+            <div class="logo">
+                <a href="./index.html"><img src="./assets/logo.png" alt="Logo Peniel" id="logo"></a>
+            </div>
+            <nav class="menu-desktop" id="menu">
+                <ul type="none">
+                    <li><a href="./index.html#sobre-nos" id="botao1">SOBRE NÓS</a></li>
+                    <li><a href="./index.html#agenda" id="botao3">AGENDA</a></li>
+                    <li><a href="./produtos.html" id="botao2">PRODUTOS</a></li>
+                    <li><a href="./index.html#contatos" id="botao4">CONTATOS</a></li>
+                </ul>
+            </nav>
+            <div class="menu-mobile" id="menu-mobile">
+                <img src="./assets/menu-fechado.png" id="btnMenu" onclick="trocarImagem()">
+            </div>
+        </div>
+    </div>
+    <div class="produto" id="produto">
+
+        <div class="secao-imagens">
+            <div class="content-slider">
+                <div class="slides">
+                    <input class="input" type="radio" name="radio-btn" id="radio1" checked>
+                    <input class="input" type="radio" name="radio-btn" id="radio2">
+                    <input class="input" type="radio" name="radio-btn" id="radio3">
+                    <input class="input" type="radio" name="radio-btn" id="radio4">
+                    
+    
+                    <div class="slide first-slide" id="first">
+                        <img src="./assets/produtos/camisa-branca-passada.webp" alt="camisa branca lisa"/>
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/produtos/camisa-branca.webp" alt="camisa branca"/>
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/produtos/camisa-branca-lado.webp" alt="camisa de lado"/>
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/produtos/camisa-branca-costas.webp" alt="camisa branca de costas"/>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </div>
+        
+        <div class="venda-produto">
+            <h1>Camisa Branca Tech T-Shirt</h1>
+            <h2>R$50,00</h2>
+            <div><a aria-label="Chat on WhatsApp" href="https://wa.me/5511947461301/?text=Quero%20comprar%20uma%20camisa%20peniel%20branca"><button><img src="./assets/whatsapp-colorido.png">COMPRE POR WHATSAPP</button></a></div>
+            <div class="descricao">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut nostrum laborum quos eligendi veniam perferendis, numquam molestiae, qui reprehenderit voluptas in esse ad dolore, eaque doloribus odio quidem architecto eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+        </div>
+    </div>
+    <div class="rodape">
+        <div class="copyright">
+            <p>&copy; Peniel - Todos os direitos reservados</p>
+            <p>Desenvolvido por <span>Victor Leme Costa</span></p>
+        </div>
+        <div class="social-media">
+            <a href="https://www.instagram.com/peniel_adf/" target="_blank"><img src="./assets/instagram-colorido.png"></a>
+            <a href="https://www.facebook.com/coralpenieladf" target="_blank"><img src="./assets/facebook-colorido.png"></a>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

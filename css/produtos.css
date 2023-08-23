@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+.centraliza-secao {
+    width: 70%;
+    margin: 0px auto;
+    padding: 5px;
+}
+
+.centraliza-topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    flex-wrap: wrap;
+}
+
+.topo {
+    width: 100%;
+    background-color: #f1f3f7;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.logo img {
+    width: 80px;
+    margin-left: 25px;
+}
+
+.menu-desktop {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.menu-desktop ul {
+    display: flex;
+}
+
+.menu-desktop a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.menu-mobile img{
+    height: 50px;
+    width: 40px;
+}
+
+#btnMenu {
+    display: none;
+}
+
+.menu-desktop div img {
+    height: 50px;
+    width: 40px;
+}
+
+#btnClose {
+    display: none;
+}
+
+.produtos {
+    width: 80%;
+    margin: 100px auto 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 120px;
+}
+
+.produtos h1 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.cards {
+    width: 300px;
+    height: 500px;
+    border: 1px solid #939393;
+    border-radius: 5px;
+}
+
+.imagem-card1 {
+    background-image: url("../assets/produtos/camisa-branca.webp");
+    height: 83%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.imagem-card1:hover {
+    background-image: url("../assets/produtos/camisa-branca-costas.webp");
+    transition: .5s;
+    cursor: pointer;
+}
+
+.imagem-card2 {
+    background-image: url("../assets/produtos/camisa-preta.webp");
+    height: 83%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.imagem-card2:hover {
+    background-image: url("../assets/produtos/camisa-preta-costas.webp");
+    transition: .5s;
+    cursor: pointer;
+}
+
+.imagem-card3 {
+    background-image: url("../assets/produtos/camisa-azul.webp");
+    height: 83%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.imagem-card3:hover {
+    background-image: url("../assets/produtos/camisa-azul-costas.webp");
+    transition: .5s;
+    cursor: pointer;
+}
+
+.imagem-card4 {
+    background-image: url("../assets/produtos/bone-cabeca-lado.webp");
+    height: 83%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.imagem-card4:hover {
+    background-size: 150%;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.imagem-card5 {
+    background-image: url("../assets/produtos/ecobag.webp");
+    height: 83%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.imagem-card5:hover {
+    background-size: 110%;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.imagem-card6 {
+    background-image: url("../assets/produtos/caneca-branca.webp");
+    height: 83%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.imagem-card6:hover {
+    background-size: 150%;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.preco {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 85px;
+}
+
+.preco button {
+    background-color: #f1f3f7;
+    height: 30px;
+    width: 100px;
+    border: 1px solid #939393;
+    border-radius: 5px;
+}
+
+.preco button:hover {
+    cursor: pointer;
+}
+
+.rodape {
+    background-color: #000000;
+    color: #f1f3f7;
+    text-align: center;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright {
+    padding-top: 25px;
+}
+
+.copyright span {
+    font-weight: 600;
+    color: #c4a47c;
+}
+
+.social-media {
+    width: 200px;
+    height: 50px;
+}
+
+.social-media img {
+    width: 45px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 795px) {
+    .menu-desktop {
+        background-color: #000;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 15px;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        visibility: hidden;
+        transition: .9s;
+        z-index: 2;
+        box-shadow: 5px 5px 5px #302d2d;
+    }
+
+    .menu-desktop a {
+        color: #c4a47c;
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .menu-desktop ul {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+
+    .menu-desktop ul li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #f1f3f7;
+    }
+
+    #btnMenu{
+        display: flex;
+        cursor: pointer;
+        width: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #btnMenu:hover {
+        background-color: #939393;
+        border-radius: 50%;
+    }
+
+    #btnMenu:active {
+        transition: all .3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .logo img{
+        margin-left: 0%;
+    }
+
+    .menu-desktop {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .menu-desktop a {
+        margin-left: 0px;
+    }
+}

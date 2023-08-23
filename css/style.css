@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+.centraliza-secao {
+    width: 70%;
+    margin: 0px auto;
+    padding: 5px;
+}
+
+.centraliza-topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    flex-wrap: wrap;
+}
+
+.topo {
+    width: 100%;
+    background-color: #f1f3f7;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.logo img {
+    width: 80px;
+    margin-left: 25px;
+}
+
+.menu-desktop {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.menu-desktop ul {
+    display: flex;
+}
+
+.menu-desktop a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.menu-mobile img{
+    height: 50px;
+    width: 40px;
+}
+
+#btnMenu {
+    display: none;
+}
+
+.menu-desktop div img {
+    height: 50px;
+    width: 40px;
+}
+
+#btnClose {
+    display: none;
+}
+
+.banner {
+    background-image: url("../assets/banner.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 800px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.banner h1 {
+    padding: 7px;
+    background-color: #f1f3f7;
+    color: #000000;
+    width: 220px;
+    height: 60px;
+    margin: 0px auto;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+}
+
+.sobre-nos {
+    background-color: #f1f3f7;
+    text-align: center;
+}
+
+.sobre-nos h2 {
+    margin-top: 50px;
+    font-weight: 600;
+}
+
+.sobre-nos p {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.galeria {
+    background-color: #fff;
+    text-align: center;
+}
+
+.galeria h2 {
+    font-weight: 600;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 70%;
+    margin: 50px auto;
+}
+
+.cards img {
+    width: 350px;
+    height: 250px;
+    margin: 10px;
+    box-shadow: 10px 10px 10px #939393;
+}
+
+.agenda {
+    background-color: #000000;
+    color: #f1f3f7;
+    text-align: center;
+}
+
+.agenda h2 {
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+.lista {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.lista ul {
+    margin-top: 100px auto;
+    height: 450px;
+}
+
+.lista li {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+    text-align: left;
+}
+
+.lista span, .lista p {
+    width: 210px;
+}
+
+.lista div {
+    width: 48%;
+    height: 1px;
+    background-color: #f1f3f7;
+}
+
+.lista h3 {
+    font-weight: 600;
+    width: 100px;
+}
+
+.lista span {
+    font-weight: bold;
+    color: #c4a47c;
+}
+
+.localizacao {
+    background-color: #f1f3f7;
+    text-align: center;
+    color: #000000;
+}
+
+.localizacao h2 {
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+.localizacao iframe {
+    margin-top: 50px;
+}
+
+.contatos {
+    margin-top: 10px;
+}
+
+.rodape {
+    background-color: #000000;
+    color: #f1f3f7;
+    text-align: center;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright {
+    padding-top: 25px;
+}
+
+.copyright span {
+    font-weight: 600;
+    color: #c4a47c;
+}
+
+.social-media {
+    width: 200px;
+    height: 50px;
+}
+
+.social-media img {
+    width: 45px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1300px) {
+    .lista div{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .lista div{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 985px) {
+    .lista h3 {
+        width: 80px;
+        font-size: 15px;
+    }
+    
+    .lista div{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .sobre-nos p {
+        margin-top: 50px;
+        font-size: 12px;
+    }
+
+    .galeria h2 {
+        text-align: center;
+    }
+    
+    .lista h3 {
+        width: 60px;
+        font-size: 12px;
+    }
+
+    .lista span, .lista p {
+        font-size: 12px;
+        text-align: left;
+        width: 160px;
+    }
+    
+    .lista div{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 795px) {
+    .banner {
+        margin-top: 100px;
+    }
+
+    .menu-desktop {
+        background-color: #000;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 15px;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        visibility: hidden;
+        transition: .9s;
+        z-index: 2;
+        box-shadow: 5px 5px 5px #302d2d;
+    }
+
+    .menu-desktop a {
+        color: #c4a47c;
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .menu-desktop ul {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+
+    .menu-desktop ul li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #f1f3f7;
+    }
+
+    #btnMenu{
+        display: flex;
+        cursor: pointer;
+        width: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #btnMenu:hover {
+        background-color: #939393;
+        border-radius: 50%;
+    }
+
+    #btnMenu:active {
+        transition: all .3s ease-in-out;
+    }
+
+@media screen and (max-width: 780px) {
+    .banner {
+        background-size: 150%;
+        height: 500px;
+    }
+
+    .localizacao iframe {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .lista div{
+        width: 30%;
+    }
+
+    .logo img{
+        margin-left: 0%;
+    }
+
+    .menu-desktop {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .menu-desktop a {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 695px) {
+    .lista li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .lista p, .lista span {
+        text-align: center;
+    }
+
+    .lista div {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .banner {
+        background-size: cover;
+    }
+
+    .localizacao p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .localizacao iframe {
+        height: 200px;
+    }
+}
+}
