@@ -97,11 +97,26 @@ function trocarImagem() {
 
 document.getElementById("btnMenu").addEventListener("click", trocarImagem);
 
-setInterval( function(){
+setInterval(function() {
     document.getElementById("radio" + slideCounter).checked = true;
+    updateLabelStyles(); // Chamando a função para atualizar os estilos dos labels
     slideCounter++;
 
     if (slideCounter > 4) {
         slideCounter = 1;
     }
-}, 2500)
+}, 2500);
+
+// Função para atualizar os estilos dos labels
+function updateLabelStyles() {
+    for (let i = 1; i <= 4; i++) {
+        const label = document.querySelector(`.manual-btn.radio${i}`);
+        const radio = document.querySelector(`#radio${i}`);
+        
+        if (radio.checked) {
+            label.classList.add("checked");
+        } else {
+            label.classList.remove("checked");
+        }
+    }
+}

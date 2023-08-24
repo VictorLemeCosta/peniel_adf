@@ -119,13 +119,13 @@
 }
 
 .btnProdutos {
-    position: absolute;
+    position: relative;
     height: 50px;
     width: 160px;
     font-size: 15px;
     border: 1px solid #c4a47c;
     left: calc(50% - 80px);
-    top: 1190px;
+    top: 25px;
     border-radius: 10px;
     background-color: #302d2d;
     text-align: center;
@@ -135,10 +135,8 @@
 
 .btnProdutos:hover {
     transition: .7s;
-    height: 60px;
     width: 170px;
     font-size: 17px;
-    top: 1185px;
     left: calc(50% - 85px);
 }
 

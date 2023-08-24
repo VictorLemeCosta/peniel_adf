@@ -29,3 +29,20 @@ btn.addEventListener("click", function(e){
 
     window.location.href = link.href;
 });
+
+// Captura todos os radio buttons e labels
+const radioButtons = document.querySelectorAll('.input');
+const labels = document.querySelectorAll('.manual-btn');
+
+// Adiciona um ouvinte de evento para cada radio button
+radioButtons.forEach((radio, index) => {
+  radio.addEventListener('change', () => {
+    // Remove a classe 'checked' de todos os labels
+    labels.forEach((label) => {
+      label.classList.remove('checked');
+    });
+
+    // Adiciona a classe 'checked' ao label correspondente ao radio button marcado
+    labels[index].classList.add('checked');
+  });
+});
