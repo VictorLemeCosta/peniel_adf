@@ -178,11 +178,12 @@
 }
 
 .venda-produto h1 {
-    font-size: 28px;
+    font-size: 25px;
     font-weight: 500;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .venda-produto h2 {
@@ -190,6 +191,39 @@
     font-weight: 400;
     text-align: center;
     margin-bottom: 20px;
+}
+
+.tamanho {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tamanho input {
+    display: none;
+}
+
+.tamanho label {
+    border: 2px solid #939393;
+    border-radius: 5px;
+    background-color: #f1f3f7;
+    width: 35px;
+    height: 30px;
+    text-align: center;
+}
+
+.tamanho label:not(:last-child) {
+    margin-right: 5px;
+}
+
+.tamanho label:hover {
+    cursor: pointer;
+    background-color: #000000;
+    border: 2px solid #f1f3f7;
+    color: #f1f3f7;
+    transition: 1s;
 }
 
 .venda-produto a {
