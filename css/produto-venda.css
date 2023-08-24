@@ -138,9 +138,11 @@
     transition: .7s;
 }
 
-.manual-btn:hover {
+@media screen and (min-width: 1024px){
+    .manual-btn:hover {
     background-color: #f1f3f7;
     border: 2px solid #302d2d;
+}
 }
 
 .manual-btn.checked {
