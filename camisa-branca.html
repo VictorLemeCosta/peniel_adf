@@ -65,7 +65,27 @@
         <div class="venda-produto">
             <h1>Camisa Branca Tech T-Shirt</h1>
             <h2>R$50,00</h2>
-            <div><a aria-label="Chat on WhatsApp" href="https://wa.me/5511947461301/?text=Quero%20comprar%20uma%20camisa%20peniel%20branca"><button><img src="./assets/whatsapp-colorido.png">COMPRE POR WHATSAPP</button></a></div>
+            <form>
+                    <div class="tamanho">
+                        <label for="PP">PP</label>
+                        <input type="radio" name="tamanho" value="PP" id="PP" required>
+                        <label for="P">P</label>
+                        <input type="radio" name="tamanho" value="P" id="P">
+                        <label for="M">M</label>
+                        <input type="radio" name="tamanho" value="M" id="M">
+                        <label for="G">G</label>
+                        <input type="radio" name="tamanho" value="G" id="G">
+                        <label for="GG">GG</label>
+                        <input type="radio" name="tamanho" value="GG" id="GG">
+                    </div>
+            </form>
+
+            <div>
+                <a id="whatsBtn" href="https://wa.me/5511947461301/?text=Quero%20comprar%20uma%20camisa%20peniel%20branca">
+                    <button id="send"><img src="./assets/whatsapp-colorido.png">COMPRE POR WHATSAPP</button>
+                </a>
+            </div>
+           
             <div class="descricao">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut nostrum laborum quos eligendi veniam perferendis, numquam molestiae, qui reprehenderit voluptas in esse ad dolore, eaque doloribus odio quidem architecto eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
             </div>
@@ -82,5 +102,6 @@
         </div>
     </div>
     <script src="./script.js"></script>
+    <script src="./script-venda-camisa-branca.js"></script>
 </body>
 </html>
