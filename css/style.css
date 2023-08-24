@@ -55,6 +55,11 @@
     margin-left: 20px;
 }
 
+.menu-desktop a:hover {
+    transition: .7s;
+    color: #c4a47c;
+}
+
 .menu-mobile img{
     height: 50px;
     width: 40px;
@@ -111,6 +116,36 @@
 .sobre-nos p {
     margin-top: 20px;
     margin-bottom: 50px;
+}
+
+.btnProdutos {
+    position: absolute;
+    height: 50px;
+    width: 160px;
+    font-size: 15px;
+    border: 1px solid #c4a47c;
+    left: calc(50% - 80px);
+    top: 1190px;
+    border-radius: 10px;
+    background-color: #302d2d;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.btnProdutos:hover {
+    transition: .7s;
+    height: 60px;
+    width: 170px;
+    font-size: 17px;
+    top: 1185px;
+    left: calc(50% - 85px);
+}
+
+.btnProdutos a {
+    text-decoration: none;
+    color: #f1f3f7;
+    margin: 0 auto;
 }
 
 .galeria {

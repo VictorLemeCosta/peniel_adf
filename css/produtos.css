@@ -55,6 +55,11 @@
     margin-left: 20px;
 }
 
+.menu-desktop a:hover {
+    transition: .7s;
+    color: #c4a47c;
+}
+
 .menu-mobile img{
     height: 50px;
     width: 40px;
