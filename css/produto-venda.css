@@ -212,6 +212,7 @@
     width: 35px;
     height: 30px;
     text-align: center;
+    z-index: 1;
 }
 
 .tamanho label:not(:last-child) {
@@ -224,6 +225,36 @@
     border: 2px solid #f1f3f7;
     color: #f1f3f7;
     transition: 1s;
+}
+
+#PP:checked ~ .PP {
+    background-color: #000000;
+    border: 2px solid #f1f3f7;
+    color: #f1f3f7;
+}
+
+#P:checked ~ .P {
+    background-color: #000000;
+    border: 2px solid #f1f3f7;
+    color: #f1f3f7;
+}
+
+#M:checked ~ .M {
+    background-color: #000000;
+    border: 2px solid #f1f3f7;
+    color: #f1f3f7;
+}
+
+#G:checked ~ .G {
+    background-color: #000000;
+    border: 2px solid #f1f3f7;
+    color: #f1f3f7;
+}
+
+#GG:checked ~ .GG {
+    background-color: #000000;
+    border: 2px solid #f1f3f7;
+    color: #f1f3f7;
 }
 
 .venda-produto a {
