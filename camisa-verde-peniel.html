@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/logo-escuro.ico" type="image/x-icon">
-    <title>Caneca Peniel</title>
+    <title>Camisa Preta Peniel</title>
 </head>
 <body>
     <div class="topo" id="topo">
@@ -31,14 +31,60 @@
     </div>
     <div class="produto" id="produto">
         <div class="secao-imagens">
-            <div class="fotos-produto">
-                <div class="foto-principal"><img src="./assets/produtos/caneca-branca.webp"></div>
+            <div class="content-slider">
+                <div class="slides">
+                    <input class="input" type="radio" name="radio-btn" id="radio1" checked>
+                    <input class="input" type="radio" name="radio-btn" id="radio2">
+                    <input class="input" type="radio" name="radio-btn" id="radio3">
+                    <input class="input" type="radio" name="radio-btn" id="radio4">
+                    
+    
+                    <div class="slide first-slide" id="first">
+                        <img src="./assets/produtos/peniel/camisa-leao-verde.jpeg" alt="camisa preta lisa"/>
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/produtos/camisa-preta.webp" alt="camisa preta"/>
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/produtos/camisa-preta-lado.webp" alt="camisa de lado"/>
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/produtos/camisa-preta-costas.webp" alt="camisa preta de costas"/>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn radio1"></label>
+                <label for="radio2" class="manual-btn radio2"></label>
+                <label for="radio3" class="manual-btn radio3"></label>
+                <label for="radio4" class="manual-btn radio4"></label>
             </div>
         </div>
+
         <div class="venda-produto">
-            <h1>Caneca</h1>
-            <h2>R$9,99</h2>
-            <div><a aria-label="Chat on WhatsApp" href="https://wa.me/5511947461301/?text=Quero%20comprar%20uma%20caneca%20peniel"><button><img src="./assets/whatsapp-colorido.png">COMPRE POR WHATSAPP</button></a></div>
+            <h1>Camisa Verde Peniel</h1>
+            <h2>R$99,99</h2>
+            <form>
+                <div class="tamanho">
+                    <input type="radio" name="tamanho" value="PP" id="PP" required>
+                    <label for="PP" class="PP">PP</label>
+                    <input type="radio" name="tamanho" value="P" id="P">
+                    <label for="P" class="P">P</label>
+                    <input type="radio" name="tamanho" value="M" id="M">
+                    <label for="M" class="M">M</label>
+                    <input type="radio" name="tamanho" value="G" id="G">
+                    <label for="G" class="G">G</label>
+                    <input type="radio" name="tamanho" value="GG" id="GG">
+                    <label for="GG" class="GG">GG</label>
+                </div>
+        </form>
+
+        <div>
+            <a id="whatsBtn" href="https://wa.me/5511947461301/?text=Quero%20comprar%20uma%20camisa%20peniel%20preta">
+                <button id="send"><img src="./assets/whatsapp-colorido.png">COMPRE POR WHATSAPP</button>
+            </a>
+        </div>
             <div class="descricao">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut nostrum laborum quos eligendi veniam perferendis, numquam molestiae, qui reprehenderit voluptas in esse ad dolore, eaque doloribus odio quidem architecto eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, illo voluptas. Sapiente rem earum eaque repellendus cumque voluptate cum explicabo, modi in amet recusandae asperiores, iste ratione nulla ducimus deleniti.</p>
             </div>
@@ -58,5 +104,6 @@
         </div>
     </div>
     <script src="./script.js"></script>
+    <script src="./script-camisa-verde-peniel.js"></script>
 </body>
 </html>

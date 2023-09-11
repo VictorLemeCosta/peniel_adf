@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: Poppins, sans-serif;
 }
+
 .centraliza-secao {
     width: 70%;
     margin: 0px auto;
@@ -20,7 +21,7 @@
 
 .topo {
     width: 100%;
-    background-color: #f1f3f7;
+    background-color: #a68e74;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -57,7 +58,7 @@
 
 .menu-desktop a:hover {
     transition: .7s;
-    color: #c4a47c;
+    color: #6d492f;
 }
 
 .menu-mobile img{
@@ -106,67 +107,72 @@
 }
 
 .imagem-card1 {
-    background-image: url("../assets/produtos/camisa-branca.webp");
+    background-image: url("../assets/produtos/peniel/camisa-leao-beje.jpeg");
     height: 83%;
     width: 100%;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-size: 105%;
 }
 
 .imagem-card1:hover {
-    background-image: url("../assets/produtos/camisa-branca-costas.webp");
+    background-size: 110%;
     transition: .5s;
     cursor: pointer;
 }
 
 .imagem-card2 {
-    background-image: url("../assets/produtos/camisa-preta.webp");
+    background-image: url("../assets/produtos/peniel/camisa-leao-verde.jpeg");
     height: 83%;
     width: 100%;
     background-position: center;
     background-size: cover;
+    background-size: 105%;
 }
 
 .imagem-card2:hover {
-    background-image: url("../assets/produtos/camisa-preta-costas.webp");
+    background-size: 110%;
     transition: .5s;
     cursor: pointer;
 }
 
 .imagem-card3 {
-    background-image: url("../assets/produtos/camisa-azul.webp");
+    background-image: url("../assets/produtos/peniel/camisa-peniel.jpeg");
     height: 83%;
     width: 100%;
     background-position: center;
     background-size: cover;
+    background-size: 105%;
 }
 
 .imagem-card3:hover {
-    background-image: url("../assets/produtos/camisa-azul-costas.webp");
+    background-size: 110%;
     transition: .5s;
     cursor: pointer;
 }
 
 .imagem-card4 {
-    background-image: url("../assets/produtos/bone-cabeca-lado.webp");
+    background-image: url("../assets/produtos/peniel/camisa-cristocentrico.jpeg");
     height: 83%;
     width: 100%;
     background-position: center;
     background-size: cover;
+    background-size: 105%;
 }
 
 .imagem-card4:hover {
-    background-size: 150%;
+    background-size: 110%;
     transition: .5s;
     cursor: pointer;
 }
 
 .imagem-card5 {
-    background-image: url("../assets/produtos/ecobag.webp");
+    background-image: url("../assets/produtos/peniel/ecobag\ peniel.jpeg");
     height: 83%;
     width: 100%;
     background-position: center;
     background-size: cover;
+    background-size: 105%;
 }
 
 .imagem-card5:hover {
@@ -176,15 +182,16 @@
 }
 
 .imagem-card6 {
-    background-image: url("../assets/produtos/caneca-branca.webp");
+    background-image: url("../assets/produtos/peniel/sticker-peniel.jpeg");
     height: 83%;
     width: 100%;
     background-position: center;
     background-size: cover;
+    background-size: 105%;
 }
 
 .imagem-card6:hover {
-    background-size: 150%;
+    background-size: 110%;
     transition: .5s;
     cursor: pointer;
 }
@@ -210,14 +217,13 @@
 }
 
 .rodape {
-    background-color: #000000;
-    color: #f1f3f7;
+    background-color: #a68e74;
+    color: #000;
     text-align: center;
     height: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .copyright {
@@ -226,7 +232,7 @@
 
 .copyright span {
     font-weight: 600;
-    color: #c4a47c;
+    color: #f1f3f7;
 }
 
 .social-media {
@@ -237,6 +243,14 @@
 .social-media img {
     width: 45px;
     padding: 10px;
+}
+
+.adf-logo {
+    display: block;
+    height: 1px;
+    position: relative;
+    bottom: 100px;
+    left: 40%;
 }
 
 @media screen and (max-width: 795px) {
@@ -309,5 +323,31 @@
 
     .menu-desktop a {
         margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .rodape {
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .copyright {
+        padding-top: 0;
+    }
+
+    .adf-logo {
+        width: 80%;
+        position: initial;
+        padding-top: 10px;
+        margin-bottom: 10px;
+        border-top: 1px solid #6d492f;
+    }
+
+    .adf-logo img {
+        height: 50px;
     }
 }

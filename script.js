@@ -2,6 +2,7 @@
 
 let open = false
 let slideCounter = 1;
+let isMobile = false;
 
 document.querySelector('#btnMenu').addEventListener('click', e => {
     open = !open;
@@ -38,14 +39,21 @@ function toggleMenu() {
         document.querySelector('#menu').style.visibility = 'visible';
         document.querySelector('#menu').style.opacity = '1';
         document.querySelector('#menu').style.transition = "opacity .7s ease-in-out";
+        isMobile = true
+        console.log("teste1", isMobile);
         return;
-    }
-    /*Fecha o menu*/
-    document.querySelector('#menu').style.opacity = '0';
-    document.querySelector('#menu').style.transition = "opacity .7s ease-in-out";
-    setTimeout(function(){
-         document.querySelector('#menu').style.visibility = 'hidden';
-    }, 700);
+    } 
+    
+    if (isMobile == true) {
+        /*Fecha o menu*/
+        document.querySelector('#menu').style.opacity = '0';
+        document.querySelector('#menu').style.transition = "opacity .7s ease-in-out";
+        setTimeout(function(){
+            document.querySelector('#menu').style.visibility = 'hidden';
+        }, 700);
+        console.log("teste2", isMobile)
+    } 
+    
 }
 
 /*function changeImage(a) {
@@ -96,27 +104,3 @@ function trocarImagem() {
   }
 
 document.getElementById("btnMenu").addEventListener("click", trocarImagem);
-
-setInterval(function() {
-    document.getElementById("radio" + slideCounter).checked = true;
-    updateLabelStyles(); // Chamando a função para atualizar os estilos dos labels
-    slideCounter++;
-
-    if (slideCounter > 4) {
-        slideCounter = 1;
-    }
-}, 2500);
-
-// Função para atualizar os estilos dos labels
-function updateLabelStyles() {
-    for (let i = 1; i <= 4; i++) {
-        const label = document.querySelector(`.manual-btn.radio${i}`);
-        const radio = document.querySelector(`#radio${i}`);
-        
-        if (radio.checked) {
-            label.classList.add("checked");
-        } else {
-            label.classList.remove("checked");
-        }
-    }
-}

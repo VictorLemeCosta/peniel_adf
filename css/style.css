@@ -4,6 +4,11 @@
     box-sizing: border-box;
     font-family: Poppins, sans-serif;
 }
+
+body {
+    background-color: #a68e74;
+}
+
 .centraliza-secao {
     width: 70%;
     margin: 0px auto;
@@ -20,7 +25,7 @@
 
 .topo {
     width: 100%;
-    background-color: #f1f3f7;
+    background-color: #a68e74;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -57,7 +62,7 @@
 
 .menu-desktop a:hover {
     transition: .7s;
-    color: #c4a47c;
+    color: #6d492f;
 }
 
 .menu-mobile img{
@@ -93,7 +98,7 @@
 
 .banner h1 {
     padding: 7px;
-    background-color: #f1f3f7;
+    background-color: #a68e74;
     color: #000000;
     width: 220px;
     height: 60px;
@@ -104,7 +109,7 @@
 }
 
 .sobre-nos {
-    background-color: #f1f3f7;
+    background-color: #a68e74;
     text-align: center;
 }
 
@@ -123,11 +128,11 @@
     height: 50px;
     width: 160px;
     font-size: 15px;
-    border: 1px solid #c4a47c;
+    border: 1px solid #f1f3f7;
     left: calc(50% - 80px);
     top: 25px;
     border-radius: 10px;
-    background-color: #302d2d;
+    background-color: #6d492f;
     text-align: center;
     display: flex;
     align-items: center;
@@ -219,7 +224,7 @@
 
 .lista span {
     font-weight: bold;
-    color: #c4a47c;
+    color: #a68e74;
 }
 
 .localizacao {
@@ -242,14 +247,13 @@
 }
 
 .rodape {
-    background-color: #000000;
-    color: #f1f3f7;
+    background-color: #a68e74;
+    color: #000;
     text-align: center;
     height: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .copyright {
@@ -258,7 +262,7 @@
 
 .copyright span {
     font-weight: 600;
-    color: #c4a47c;
+    color: #f1f3f7;
 }
 
 .social-media {
@@ -269,6 +273,14 @@
 .social-media img {
     width: 45px;
     padding: 10px;
+}
+
+.adf-logo {
+    display: block;
+    height: 1px;
+    position: relative;
+    bottom: 100px;
+    left: 40%;
 }
 
 @media screen and (max-width: 1300px) {
@@ -436,6 +448,23 @@
 
     .localizacao p {
         font-size: 12px;
+    }
+
+    .rodape {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .adf-logo {
+        width: 80%;
+        position: initial;
+        padding-top: 10px;
+        margin-bottom: 10px;
+        border-top: 1px solid #6d492f;
+    }
+
+    .adf-logo img {
+        height: 50px;
     }
 }
 
