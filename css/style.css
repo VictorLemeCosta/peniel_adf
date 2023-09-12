@@ -18,7 +18,7 @@ body {
 .centraliza-topo {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 70%;
     flex-wrap: wrap;
 }
@@ -84,7 +84,7 @@ body {
 }
 
 .banner {
-    background-image: url("../assets/banner.jpeg");
+    background-image: url("../assets/produtos/capa-cristocentrico-peniel.png");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -106,6 +106,16 @@ body {
     font-weight: 500;
     font-size: 32px;
     text-align: center;
+}
+
+.titulo-peniel {
+    height: 400px;
+}
+
+.banner img {
+    width: 500px;
+    height: 500px;
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(260deg) brightness(103%) contrast(101%);
 }
 
 .sobre-nos {
@@ -360,6 +370,10 @@ body {
     .lista div{
         width: 40%;
     }
+
+    .titulo-peniel {
+        height: 300px;
+    }
 }
 
 @media screen and (max-width: 1150px) {
@@ -383,6 +397,10 @@ body {
     .sobre-nos p {
         margin-top: 50px;
         font-size: 12px;
+    }
+
+    .titulo-peniel {
+        height: 250px;
     }
 
     .galeria h2 {
@@ -564,6 +582,10 @@ body {
         background-size: cover;
     }
 
+    .titulo-peniel {
+        height: 150px;
+    }
+
     .localizacao p {
         font-size: 12px;
     }
@@ -571,6 +593,11 @@ body {
     .rodape {
         display: flex;
         flex-direction: column;
+    }
+
+    .banner img {
+        width: 300px;
+        height: 300px;
     }
 }
 

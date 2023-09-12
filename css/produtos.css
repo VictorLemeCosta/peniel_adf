@@ -14,7 +14,7 @@
 .centraliza-topo {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 70%;
     flex-wrap: wrap;
 }
