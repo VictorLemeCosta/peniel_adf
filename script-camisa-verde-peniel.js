@@ -11,19 +11,19 @@ btn.addEventListener("click", function(e){
     const link = document.querySelector('#whatsBtn');
 
     if (tamanho1.checked === true){
-        link.setAttribute("href", "https://wa.me/5511947461301/?text=Quero%20comprar%20uma%20camisa%20leão%20peniel%20verde%20tamanho:%20PP")
+        link.setAttribute("href", "https://wa.me/5511947461301/?text=Quero%20comprar%20uma%20Camisa%20Leão%20Peniel%20*Verde*%20tamanho:%20PP")
         console.log(link.href)
     } if (tamanho2.checked === true){
-        link.setAttribute("href", "https://wa.me/5511947461301/?text=Quero%20comprar%20uma%20camisa%20leão%20peniel%20verde%20tamanho:%20P")
+        link.setAttribute("href", "https://wa.me/5511947461301/?text=Quero%20comprar%20uma%20Camisa%20Leão%20Peniel%20*Verde*%20tamanho:%20P")
         console.log(link.href)
     } if (tamanho3.checked === true){
-        link.setAttribute("href", "https://wa.me/5511947461301/?text=Quero%20comprar%20uma%20camisa%20leão%20peniel%20verde%20tamanho:%20M")
+        link.setAttribute("href", "https://wa.me/5511947461301/?text=Quero%20comprar%20uma%20Camisa%20Leão%20Peniel%20*Verde*%20tamanho:%20M")
         console.log(link.href)
     } if (tamanho4.checked === true){
-        link.setAttribute("href", "https://wa.me/5511947461301/?text=Quero%20comprar%20uma%20camisa%20leão%20peniel%20verde%20tamanho:%20G")
+        link.setAttribute("href", "https://wa.me/5511947461301/?text=Quero%20comprar%20uma%20Camisa%20Leão%20Peniel%20*Verde*%20tamanho:%20G")
         console.log(link.href)
     } if (tamanho5.checked === true){
-        link.setAttribute("href", "https://wa.me/5511947461301/?text=Quero%20comprar%20uma%20camisa%20leão%20peniel%20verde%200tamanho:%20GG")
+        link.setAttribute("href", "https://wa.me/5511947461301/?text=Quero%20comprar%20uma%20Camisa%20Leão%20Peniel%20*Verde*%200tamanho:%20GG")
         console.log(link.href)
     }
 

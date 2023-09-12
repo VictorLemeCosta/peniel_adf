@@ -336,6 +336,131 @@
     width: 400px;
 }
 
+.mais-produtos {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mais-produtos h1 {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.produtos {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    width: 150px;
+    height: 200px;
+    border: 1px solid #939393;
+    border-radius: 5px;
+}
+
+.imagem-card1 {
+    background-image: url("../assets/produtos/peniel/camisa-leao-beje.jpeg");
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-size: 105%;
+}
+
+.imagem-card1:hover {
+    background-size: 110%;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.imagem-card2 {
+    background-image: url("../assets/produtos/peniel/camisa-leao-verde.jpeg");
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-size: 105%;
+}
+
+.imagem-card2:hover {
+    background-size: 110%;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.imagem-card3 {
+    background-image: url("../assets/produtos/peniel/camisa-peniel.jpeg");
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-size: 105%;
+}
+
+.imagem-card3:hover {
+    background-size: 110%;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.imagem-card4 {
+    background-image: url("../assets/produtos/peniel/camisa-cristocentrico.jpeg");
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-size: 105%;
+}
+
+.imagem-card4:hover {
+    background-size: 110%;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.imagem-card5 {
+    background-image: url("../assets/produtos/peniel/ecobag\ peniel.jpeg");
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-size: 105%;
+}
+
+.imagem-card5:hover {
+    background-size: 110%;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.imagem-card6 {
+    background-image: url("../assets/produtos/peniel/sticker-peniel.jpeg");
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-size: 105%;
+}
+
+.imagem-card6:hover {
+    background-size: 110%;
+    transition: .5s;
+    cursor: pointer;
+}
+
 .rodape {
     background-color: #a68e74;
     color: #000;
@@ -554,5 +679,14 @@
     .fotos-produto img {
         width: 300px;
         height: 300px;
+    }
+
+    .mais-produtos {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .produtos:not(:last-child) {
+        margin-bottom: 20px;
     }
 }
