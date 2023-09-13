@@ -99,25 +99,28 @@
 
 .link-retorno {
     width: 70px;
-    border: 1px solid #302d2d;
-    padding: 5px 10px;
-    border-radius: 5px;
+    height: 30px;
     margin-left: 20px;
     margin-bottom: 20px;
     text-align: center;
-}
-
-.link-retorno:hover {
-    cursor: pointer;
-    background-color: #a68e74;
-    transition: .6s;
+    justify-content: center;
 }
 
 .link-retorno a{
     text-decoration: none;
     color: #000;
-    opacity: 90%;
     font-size: 12px;
+    text-transform: uppercase;
+    border: 1px solid #939393;
+    border-radius: 5px;
+    padding: 8px 10px;
+}
+
+.link-retorno a:hover {
+    color: #f1f3f7;
+    background-color: #000000;
+    border: 1px solid #f1f3f7;
+    transition: .6s;
 }
 
 .secao-imagens {
@@ -269,6 +272,9 @@
     height: 30px;
     text-align: center;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .tamanho label:not(:last-child) {
@@ -322,8 +328,8 @@
     height: 60px;
     width: 250px;
     border: none;
-    background-color: #fffffe;
-    border: 1px solid #302d2d;
+    background-color: #f1f3f7;
+    border: 1px solid #939393;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -332,8 +338,10 @@
 
 .venda-produto button:hover {
     cursor: pointer;
-    border: 1px solid #939393;
     transition: .3s ease;
+    background-color: #000000;
+    color: #f1f3f7;
+    border: 1px solid #f1f3f7;
 }
 
 .venda-produto button img {
@@ -460,7 +468,7 @@
 }
 
 .imagem-card5 {
-    background-image: url("../assets/produtos/peniel/ecobag\ peniel.jpeg");
+    background-image: url("../assets/produtos/peniel/ecobag-peniel-costas.jpeg");
     height: 100%;
     width: 100%;
     background-position: center;
@@ -475,7 +483,7 @@
 }
 
 .imagem-card6 {
-    background-image: url("../assets/produtos/peniel/sticker-peniel.jpeg");
+    background-image: url("../assets/produtos/peniel/ecobag\ peniel.jpeg");
     height: 100%;
     width: 100%;
     background-position: center;
@@ -484,6 +492,21 @@
 }
 
 .imagem-card6:hover {
+    background-size: 110%;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.imagem-card7 {
+    background-image: url("../assets/produtos/peniel/sticker-peniel.jpeg");
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-size: 105%;
+}
+
+.imagem-card7:hover {
     background-size: 110%;
     transition: .5s;
     cursor: pointer;
