@@ -237,6 +237,20 @@ body {
     color: #a68e74;
 }
 
+.jesus-moderno {
+    position: relative;
+    top: -350px;
+    left: 50%;
+    height: 10px;
+    width: 10px;
+}
+
+.jesus-moderno img {
+    height: 1150px;
+    width: 1050px;
+    z-index: 1;
+}
+
 .localizacao {
     background-color: #f1f3f7;
     text-align: center;
@@ -371,6 +385,12 @@ body {
 }
 
 @media screen and (max-width: 1300px) {
+    .jesus-moderno {
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
     .lista div{
         width: 40%;
     }
@@ -394,6 +414,11 @@ body {
     
     .lista div{
         width: 30%;
+    }
+
+    .jesus-moderno {
+        top: -400px;
+        left: 5%;
     }
 }
 
@@ -424,6 +449,11 @@ body {
     
     .lista div{
         width: 30%;
+    }
+
+    .jesus-moderno {
+        top: -400px;
+        left: -50px;
     }
 
     .rodape {
@@ -539,6 +569,11 @@ body {
         height: 500px;
     }
 
+    .jesus-moderno {
+        top: -400px;
+        left: -100px;
+    }
+
     .localizacao iframe {
         height: 300px;
     }
@@ -579,6 +614,11 @@ body {
     .lista div {
         display: none;
     }
+
+    .jesus-moderno {
+        top: -300px;
+        left: -250px;
+    }
 }
 
 @media screen and (max-width: 680px) {
@@ -606,6 +646,11 @@ body {
 }
 
 @media screen and (max-width: 490px) {
+    .jesus-moderno {
+        top: -300px;
+        left: -300px;
+    }
+    
     .localizacao iframe {
         height: 200px;
     }
