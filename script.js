@@ -93,7 +93,7 @@ function scrollFunction() {
 
         document.getElementById("menu").style.transition = ".5s"
 
-        document.getElementById("botaoSpotify").style.width = "50px";
+        document.getElementById("botaoSpotify").style.width = "35px";
     }
 }
 
