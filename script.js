@@ -79,6 +79,10 @@ function scrollFunction() {
         document.getElementById("menu").style.top = "60px";
 
         document.getElementById("menu").style.transition = ".5s";
+
+        document.getElementById("botaoSpotify").style.width = "30px";
+
+        document.getElementById("botaoSpotify").style.transition = ".5s";
     } 
     else {
         document.getElementById("topo").style.height = "100px";
@@ -88,6 +92,8 @@ function scrollFunction() {
         document.getElementById("menu").style.top = "100px";
 
         document.getElementById("menu").style.transition = ".5s"
+
+        document.getElementById("botaoSpotify").style.width = "50px";
     }
 }
 
