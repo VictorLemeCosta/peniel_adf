@@ -15,7 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 70%;
+    width: 65%;
     flex-wrap: wrap;
 }
 
@@ -59,6 +59,41 @@
 .menu-desktop a:hover {
     transition: .7s;
     color: #a68e74;
+}
+
+#botao5 {
+    width: 50px;
+    display: none;
+}
+
+.botaoSpotify {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+}
+
+.centraliza-topo .botaoSpotify a {
+    text-decoration: none;
+}
+
+.botaoSpotify p {
+    font-weight: 500;
+    color: #6d492f;
+    text-transform: uppercase;
+}
+
+.botaoSpotify p:hover {
+    transition: .7s;
+    color: #a68e74;
+}
+
+#botaoSpotify {
+    width: 35px;
+}
+
+.menu-mobile {
+    display: none;
 }
 
 .menu-mobile img{
@@ -383,7 +418,20 @@
     }
 }
 
+@media screen and (max-width: 1150px) {
+    @media screen and (min-width: 795px) {
+        .centraliza-topo {
+            width: 100%;
+            padding-right: 50px;
+        }
+    }
+}
+
 @media screen and (max-width: 940px) {
+    #botaoSpotify {
+        width: 30px;
+    }
+    
     .rodape {
         flex-direction: column;
         align-items: center;
@@ -425,11 +473,33 @@
     }
 }
 
+@media screen and (max-width: 805px) {
+    .botaoSpotify {
+        width: 20px;
+    }
+    
+    .botaoSpotify p {
+        display: none;
+    }
+
+    #botaoSpotify {
+        width: 20px;
+    }
+}
+
 @media screen and (max-width: 795px) {
+    .banner {
+        margin-top: 100px;
+    }
+
+    .centraliza-topo {
+        justify-content: space-between;
+        width: 85%;
+    }
+
     .menu-desktop {
         background-color: #6d492f;
         width: 100%;
-        height: 200px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -449,21 +519,31 @@
         width: 100%;
         text-align: center;
         font-size: 15px;
+        margin-left: 0px;
     }
 
     .menu-desktop ul {
         width: 100%;
-        height: 200px;
+        height: calc(80vh - 150px);
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
     }
 
-    .menu-desktop ul li {
+    .menu-desktop ul li:not(:last-child) {
         width: 70%;
         text-align: center;
         border-bottom: 1px solid #f1f3f7;
+    }
+
+    .menu-mobile {
+        display: flex;
+    }
+
+    #botao5 {
+        display: flex;
+        width: 30px;
     }
 
     #btnMenu{
@@ -481,6 +561,10 @@
 
     #btnMenu:active {
         transition: all .3s ease-in-out;
+    }
+
+    .botaoSpotify {
+        display: none;
     }
 
     .produtos {
