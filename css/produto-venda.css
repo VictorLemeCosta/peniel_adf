@@ -287,12 +287,79 @@
     margin-bottom: 20px;
 }
 
+.venda-produto form {
+    padding: 0 10px 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.venda-produto form fieldset:first-child {
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 270px;
+    border: 1px solid #939393;
+}
+
+.venda-produto form fieldset:last-child {
+    border-radius: 5px;
+    width: 270px;
+    border: 1px solid #939393;
+}
+
+.cor-camisa {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+    height: 35px;
+}
+
+.cor-camisa input {
+    display: none;
+}
+
+.cor-camisa label {
+    height: 30px;
+    text-align: center;
+    z-index: 1;
+    border: 1px solid #939393;
+    border-radius: 5px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cor-camisa label:hover {
+    cursor: pointer;
+    background-color: #000000;
+    border: 2px solid #f1f3f7;
+    color: #f1f3f7;
+    transition: 1s;
+}
+
+#cor-branco:checked ~ .cor-branco {
+    background-color: #000000;
+    border: 2px solid #f1f3f7;
+    color: #f1f3f7;
+}
+
+#cor-preto:checked ~ .cor-preto {
+    background-color: #000000;
+    border: 2px solid #f1f3f7;
+    color: #f1f3f7;
+}
+
 .tamanho {
     width: 100%;
+    height: 35px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .tamanho input {
@@ -359,9 +426,10 @@
 }
 
 .venda-produto button {
+    margin-top: 10px;
     margin-bottom: 50px;
     height: 60px;
-    width: 250px;
+    width: 270px;
     border: none;
     background-color: #f1f3f7;
     border: 1px solid #939393;
@@ -688,6 +756,22 @@
 
     .venda-produto h1 {
         font-size: 20px;
+    }
+
+    .venda-produto form fieldset:first-child {
+        width: 200px;
+        padding: 0 5px;
+    }
+
+    .venda-produto form fieldset:last-child {
+        width: 200px;
+        padding: 0 5px;
+    }
+
+    .venda-produto .tamanho label {
+        width: 28px;
+        height: 25px;
+        font-size: 14px;
     }
 
     .venda-produto button {

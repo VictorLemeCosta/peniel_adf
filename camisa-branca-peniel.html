@@ -42,7 +42,7 @@
                 <a href="./produtos.html">Voltar</a>
             </div>
             <div class="secao-imagens">
-                <h1>Camisa Branca Peniel</h1>
+                <h1>Camisa Peniel</h1>
                 <div class="content-slider">
                     <div class="slides">
                         <input class="input" type="radio" name="radio-btn" id="radio1" checked>
@@ -76,21 +76,33 @@
         </div>
 
         <div class="venda-produto">
-            <h1>Camisa Branca Peniel</h1>
+            <h1>Camisa Peniel</h1>
             <!--<h2>R$89,99</h2>-->
             <form>
-                <div class="tamanho">
-                    <input type="radio" name="tamanho" value="PP" id="PP" required>
-                    <label for="PP" class="PP">PP</label>
-                    <input type="radio" name="tamanho" value="P" id="P">
-                    <label for="P" class="P">P</label>
-                    <input type="radio" name="tamanho" value="M" id="M">
-                    <label for="M" class="M">M</label>
-                    <input type="radio" name="tamanho" value="G" id="G">
-                    <label for="G" class="G">G</label>
-                    <input type="radio" name="tamanho" value="GG" id="GG">
-                    <label for="GG" class="GG">GG</label>
-                </div>
+                <fieldset>
+                    <legend>Cor</legend>
+                    <div class="cor-camisa">
+                        <input type="radio" name="cor-camisa" value="Branco" id="cor-branco" required>
+                        <label for="cor-branco" class="cor-branco">Branco</label>
+                        <input type="radio" name="cor-camisa" value="Preto" id="cor-preto">
+                        <label for="cor-preto" class="cor-preto">Preto</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Tamanho</legend>
+                    <div class="tamanho">
+                        <input type="radio" name="tamanho" value="PP" id="PP" required>
+                        <label for="PP" class="PP">PP</label>
+                        <input type="radio" name="tamanho" value="P" id="P">
+                        <label for="P" class="P">P</label>
+                        <input type="radio" name="tamanho" value="M" id="M">
+                        <label for="M" class="M">M</label>
+                        <input type="radio" name="tamanho" value="G" id="G">
+                        <label for="G" class="G">G</label>
+                        <input type="radio" name="tamanho" value="GG" id="GG">
+                        <label for="GG" class="GG">GG</label>
+                    </div>
+                </fieldset>
             </form>
 
             <div>

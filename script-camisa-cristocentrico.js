@@ -8,22 +8,39 @@ btn.addEventListener("click", function(e){
     const tamanho3 = document.querySelector("#M");
     const tamanho4 = document.querySelector("#G");
     const tamanho5 = document.querySelector("#GG");
+    const cor1 = document.querySelector("#cor-branco");
+    const cor2 = document.querySelector("#cor-preto");
     const link = document.querySelector('#whatsBtn');
 
-    if (tamanho1.checked === true){
+    if (tamanho1.checked === true && cor1.checked === true){
         link.setAttribute("href", "https://wa.me/5511947461301/?text=Quero%20comprar%20uma%20Camisa%20Peniel%20*Branca*%20Cristocêntrico%20tamanho:%20PP")
         console.log(link.href)
-    } if (tamanho2.checked === true){
+    } if (tamanho2.checked === true && cor1.checked === true){
         link.setAttribute("href", "https://wa.me/5511947461301/?text=Quero%20comprar%20uma%20Camisa%20Peniel%20*Branca*%20Cristocêntrico%20tamanho:%20P")
         console.log(link.href)
-    } if (tamanho3.checked === true){
+    } if (tamanho3.checked === true && cor1.checked === true){
         link.setAttribute("href", "https://wa.me/5511947461301/?text=Quero%20comprar%20uma%20Camisa%20Peniel%20*Branca*%20Cristocêntrico%20tamanho:%20M")
         console.log(link.href)
-    } if (tamanho4.checked === true){
+    } if (tamanho4.checked === true && cor1.checked === true){
         link.setAttribute("href", "https://wa.me/5511947461301/?text=Quero%20comprar%20uma%20Camisa%20Peniel%20*Branca*%20Cristocêntrico%20tamanho:%20G")
         console.log(link.href)
-    } if (tamanho5.checked === true){
+    } if (tamanho5.checked === true && cor1.checked === true){
         link.setAttribute("href", "https://wa.me/5511947461301/?text=Quero%20comprar%20uma%20Camisa%20Peniel%20*Branca*%20Cristocêntrico%20tamanho:%20GG")
+        console.log(link.href)
+    } if (tamanho1.checked === true && cor2.checked === true){
+        link.setAttribute("href", "https://wa.me/5511947461301/?text=Quero%20comprar%20uma%20Camisa%20Peniel%20*Preta*%20Cristocêntrico%20tamanho:%20PP")
+        console.log(link.href)
+    } if (tamanho2.checked === true && cor2.checked === true){
+        link.setAttribute("href", "https://wa.me/5511947461301/?text=Quero%20comprar%20uma%20Camisa%20Peniel%20*Preta*%20Cristocêntrico%20tamanho:%20P")
+        console.log(link.href)
+    } if (tamanho3.checked === true && cor2.checked === true){
+        link.setAttribute("href", "https://wa.me/5511947461301/?text=Quero%20comprar%20uma%20Camisa%20Peniel%20*Preta*%20Cristocêntrico%20tamanho:%20M")
+        console.log(link.href)
+    } if (tamanho4.checked === true && cor2.checked === true){
+        link.setAttribute("href", "https://wa.me/5511947461301/?text=Quero%20comprar%20uma%20Camisa%20Peniel%20*Preta*%20Cristocêntrico%20tamanho:%20G")
+        console.log(link.href)
+    } if (tamanho5.checked === true && cor2.checked === true){
+        link.setAttribute("href", "https://wa.me/5511947461301/?text=Quero%20comprar%20uma%20Camisa%20Peniel%20*Preta*%20Cristocêntrico%20tamanho:%20GG")
         console.log(link.href)
     }
 
