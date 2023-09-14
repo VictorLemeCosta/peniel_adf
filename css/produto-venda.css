@@ -16,8 +16,8 @@
     align-items: center;
     justify-content: space-between;
     width: 65%;
-    margin: 0px auto;
     flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 .topo {
@@ -117,7 +117,7 @@
 
 .produto {
     width: 80%;
-    margin: 130px auto 50px;
+    margin: 100px auto 50px;
     padding: 50px 0 70px;
     display: flex;
     justify-content: center;

@@ -17,6 +17,7 @@
     justify-content: space-between;
     width: 65%;
     flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 .topo {
@@ -31,7 +32,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .logo img {
