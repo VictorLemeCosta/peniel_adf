@@ -1,0 +1,583 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    background-color: #fffffe;
+}
+
+.centraliza-secao {
+    width: 70%;
+    margin: 0px auto;
+    padding: 5px;
+}
+
+.centraliza-topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.topo {
+    width: 100%;
+    background-color: #fffffe;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.logo img {
+    width: 80px;
+    margin-left: 25px;
+}
+
+.menu-desktop {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.menu-desktop ul {
+    display: flex;
+}
+
+.menu-desktop a {
+    color: #6d492f;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.menu-desktop a:hover {
+    transition: .7s;
+    color: #a68e74;
+}
+
+#botao5 {
+    width: 50px;
+    display: none;
+}
+
+.botaoSpotify {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+}
+
+.centraliza-topo .botaoSpotify a {
+    text-decoration: none;
+}
+
+.botaoSpotify p {
+    font-weight: 500;
+    color: #6d492f;
+    text-transform: uppercase;
+}
+
+.botaoSpotify p:hover {
+    transition: .7s;
+    color: #a68e74;
+}
+
+#botaoSpotify {
+    width: 35px;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.menu-mobile img{
+    height: 50px;
+    width: 40px;
+}
+
+#btnMenu {
+    display: none;
+}
+
+.menu-desktop div img {
+    height: 50px;
+    width: 40px;
+}
+
+#btnClose {
+    display: none;
+}
+
+.pagamento-pix {
+    width: 100%;
+}
+
+.pix {
+    width: 70%;
+    margin: 100px auto 0;
+    height: 500px;
+    background-color: #f1f3f7;
+    border-radius: 20px;
+}
+
+.rodape {
+    background-color: #fffffe;
+    color: #000;
+    text-align: center;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.madeBy {
+    height: 100px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.madeBy span {
+    font-weight: 500;
+    color: #a68e74;
+}
+
+.madeBy a {
+    text-decoration: none;
+    color: #000;
+}
+
+.madeBy a:hover {
+    font-weight: 500;
+}
+
+.madeBy img{
+    width: 35px;
+    padding: 10px;
+}
+
+.victor {
+    display: flex;
+    align-items: center;
+}
+
+.victor a {
+    display: flex;
+    align-items: center;
+}
+
+.victor-email {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+}
+
+.victor-email p {
+    display: flex;
+    align-items: center;
+}
+
+.victor-email a {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.peniel-adf {
+    display: flex;
+    flex-direction: row;
+}
+
+.peniel {
+    border-left: 1px solid #6d492f;
+    border-right: 1px solid #6d492f;
+    padding: 0 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+
+.logo-peniel img {
+    height: 40px;
+    padding-top: 10px;
+}
+
+.social-media {
+    width: 200px;
+    height: 50px;
+}
+
+.social-media img {
+    width: 45px;
+    padding: 10px;
+}
+
+.adf-logo {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.adf-logo img {
+    height: 50px;
+}
+
+.adf-logo h3 {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1300px) {
+    .jesus-moderno {
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .lista div{
+        width: 40%;
+    }
+
+    .titulo-peniel {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    @media screen and (min-width: 795px) {
+        .centraliza-topo {
+            width: 100%;
+            padding-right: 50px;
+        }
+    }
+    
+    .lista div{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 985px) {
+    .lista h3 {
+        width: 80px;
+        font-size: 15px;
+    }
+    
+    .lista div{
+        width: 30%;
+    }
+
+    .jesus-moderno {
+        top: -400px;
+        left: 5%;
+    }
+}
+
+@media screen and (max-width: 940px) {
+     #botaoSpotify {
+        width: 30px;
+    }
+    
+    .sobre-nos p {
+        margin-top: 50px;
+        font-size: 12px;
+    }
+
+    .titulo-peniel {
+        height: 250px;
+    }
+
+    .galeria h2 {
+        text-align: center;
+    }
+    
+    .lista h3 {
+        width: 60px;
+        font-size: 12px;
+    }
+
+    .lista span, .lista p {
+        font-size: 12px;
+        text-align: left;
+        width: 160px;
+    }
+    
+    .lista div{
+        width: 30%;
+    }
+
+    .jesus-moderno {
+        top: -400px;
+        left: -50px;
+    }
+
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+        height: 300px;
+        padding-top: 10px;
+    }
+
+    .madeBy {
+        margin-right: 0px;
+    }
+
+    .peniel-adf {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        border-top: 1px solid #6d492f;
+    }
+
+    .peniel {
+        border-left: none;
+        border-right: none;
+        width: 60%;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .adf-logo {
+        width: 60%;
+        position: initial;
+        padding-top: 5px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        border-left: 1px solid #6d492f;
+        height: 85px;
+    }
+
+    .adf-logo img {
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 805px) {
+    .botaoSpotify {
+        width: 20px;
+    }
+    
+    .botaoSpotify p {
+        display: none;
+    }
+
+    #botaoSpotify {
+        width: 20px;
+    }
+}
+
+@media screen and (max-width: 795px) {
+    .banner {
+        margin-top: 100px;
+    }
+
+    .centraliza-topo {
+        justify-content: space-between;
+        width: 85%;
+    }
+
+    .menu-desktop {
+        background-color: #6d492f;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 15px;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        visibility: hidden;
+        transition: .9s;
+        z-index: 2;
+        box-shadow: 5px 5px 5px #302d2d;
+    }
+
+    .menu-desktop a {
+        color: #f1f3f7;
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+        margin-left: 0px;
+    }
+
+    .menu-desktop ul {
+        width: 100%;
+        height: calc(80vh - 150px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .menu-desktop ul li:not(:last-child) {
+        width: 70%;
+        text-align: center;
+        border-bottom: 1px solid #f1f3f7;
+    }
+
+    .menu-mobile {
+        display: flex;
+    }
+
+    #botao5 {
+        display: flex;
+        width: 30px;
+    }
+
+    #btnMenu{
+        display: flex;
+        cursor: pointer;
+        width: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #btnMenu:hover {
+        background-color: #939393;
+        border-radius: 50%;
+    }
+
+    #btnMenu:active {
+        transition: all .3s ease-in-out;
+    }
+
+    .botaoSpotify {
+        display: none;
+    }
+}
+@media screen and (max-width: 780px) {
+    .banner {
+        background-size: 150%;
+        height: 500px;
+    }
+
+    .jesus-moderno {
+        top: -400px;
+        left: -100px;
+    }
+
+    .localizacao iframe {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .lista div{
+        width: 30%;
+    }
+
+    .logo img{
+        margin-left: 0%;
+    }
+
+    .menu-desktop {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .menu-desktop a {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 695px) {
+    .lista li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .lista p, .lista span {
+        text-align: center;
+    }
+
+    .lista div {
+        display: none;
+    }
+
+    .jesus-moderno {
+        top: -300px;
+        left: -250px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .banner {
+        background-size: cover;
+    }
+
+    .titulo-peniel {
+        height: 150px;
+    }
+
+    .localizacao p {
+        font-size: 12px;
+    }
+
+    .rodape {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .jesus-moderno {
+        top: -300px;
+        left: -300px;
+    }
+    
+    .localizacao iframe {
+        height: 200px;
+    }
+
+    .madeBy {
+        font-size: 12px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .victor-email a {
+        margin-left: 5px;
+    }
+
+    .peniel-adf {
+        flex-direction: column;
+        border: none;
+    }
+
+    .peniel {
+        width: 90%;
+        border-top: 1px solid #6d492f;
+        border-bottom: 1px solid #6d492f;
+    }
+
+    .adf-logo {
+        width: 90%;
+        border-left: none;
+    }
+}
