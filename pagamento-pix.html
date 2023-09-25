@@ -39,15 +39,11 @@
     <div class="pagamento-pix">
         <div class="pix">
             
-  <form id="form-checkout" action="https://ws.pagseguro.uol.com.br/v2/checkout" method="post">
+  <form id="form-checkout" action="https://sandbox.api.pagseguro.com/orders" method="post">
     <div>
       <div>
         <label for="payerFirstName">Nome</label>
         <input id="form-checkout__payerFirstName" name="payerFirstName" type="text">
-      </div>
-      <div>
-        <label for="payerLastName">Sobrenome</label>
-        <input id="form-checkout__payerLastName" name="payerLastName" type="text">
       </div>
       <div>
         <label for="email">E-mail</label>
@@ -65,6 +61,67 @@
         <label for="identificationNumber">Número do documento</label>
         <input id="form-checkout__identificationNumber" name="identificationNumber" type="text">
       </div>
+      <div>
+        <label for="postal_code">CEP</label>
+        <input id="postal_code" name="postal_code" type="text">
+      </div>
+      <div>
+        <label for="address">Endereço</label>
+        <input id="address" name="address" type="text">
+      </div>
+      <div>
+        <label for="addressNumber">Número</label>
+        <input id="addressNumber" name="addressNumber" type="number">
+      </div>
+      <div>
+        <label for="addressComplement">Complemento</label>
+        <input id="addressComplement" name="addressComplement" type="text">
+      </div>
+      <div>
+        <label for="addressLocality">Bairro</label>
+        <input id="addressLocality" name="addressLocality" type="text">
+      </div>
+      <div>
+        <label for="addressCity">Cidade</label>
+        <input id="addressCity" name="addressCity" type="text">
+      </div>
+      <div>
+        <label for="state">Estado</label>
+        <select id="state" name="state" type="text">
+            <option>Acre</option>
+            <option>Alagoas</option>
+            <option>Amapá</option>
+            <option>Amazonas</option>
+            <option>Bahia</option>
+            <option>Ceará</option>
+            <option>Espírito Santo</option>
+            <option>Goiás</option>
+            <option>Maranhão</option>
+            <option>Mato Grosso</option>
+            <option>Mato Grosso do Sul</option>
+            <option>Minas Gerais</option>
+            <option>Pará</option>
+            <option>Paraíba</option>
+            <option>Paraná</option>
+            <option>Pernambuco</option>
+            <option>Piauí</option>
+            <option>Rio de Janeiro</option>
+            <option>Rio Grande do Norte</option>
+            <option>Rio Grande do Sul</option>
+            <option>Rondônia</option>
+            <option>Roraima</option>
+            <option>Santa Catarina</option>
+            <option>São Paulo</option>
+            <option>Sergipe</option>
+            <option>Tocantins</option>
+            <option>Distrito Federal</option>
+        </select>
+      </div>
+      <div>
+        <label for="phone">Celular</label>
+        <input id="phone" name="phone" type="text" placeholder="11999999999">
+      </div>
+      
     </div>
 
     <div>
@@ -72,7 +129,7 @@
         <input type="hidden" name="transactionAmount" id="transactionAmount" value="0.1">
         <input type="hidden" name="description" id="description" value="Nome do Produto">
         <br>
-        <button type="submit">Pagar</button>
+        <button type="submit" onclick="form()">Pagar</button>
       </div>
     </div>
   </form>
