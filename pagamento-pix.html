@@ -43,11 +43,11 @@
     <div>
       <div>
         <label for="payerFirstName">Nome</label>
-        <input id="form-checkout__payerFirstName" name="payerFirstName" type="text">
+        <input id="form-checkout__payerFirstName" name="payerFirstName" type="text" required>
       </div>
       <div>
         <label for="email">E-mail</label>
-        <input id="form-checkout__email" name="email" type="text">
+        <input id="form-checkout__email" name="email" type="text" required>
       </div>
       <div>
         <label for="identificationType">Tipo de documento</label>
@@ -59,19 +59,19 @@
       </div>
       <div>
         <label for="identificationNumber">Número do documento</label>
-        <input id="form-checkout__identificationNumber" name="identificationNumber" type="text">
+        <input id="form-checkout__identificationNumber" name="identificationNumber" type="text" required>
       </div>
       <div>
         <label for="postal_code">CEP</label>
-        <input id="postal_code" name="postal_code" type="text">
+        <input id="postal_code" name="postal_code" type="text" required>
       </div>
       <div>
         <label for="address">Endereço</label>
-        <input id="address" name="address" type="text">
+        <input id="address" name="address" type="text" required>
       </div>
       <div>
         <label for="addressNumber">Número</label>
-        <input id="addressNumber" name="addressNumber" type="number">
+        <input id="addressNumber" name="addressNumber" type="number" required>
       </div>
       <div>
         <label for="addressComplement">Complemento</label>
@@ -79,11 +79,11 @@
       </div>
       <div>
         <label for="addressLocality">Bairro</label>
-        <input id="addressLocality" name="addressLocality" type="text">
+        <input id="addressLocality" name="addressLocality" type="text" required>
       </div>
       <div>
         <label for="addressCity">Cidade</label>
-        <input id="addressCity" name="addressCity" type="text">
+        <input id="addressCity" name="addressCity" type="text" required>
       </div>
       <div>
         <label for="state">Estado</label>
@@ -119,18 +119,13 @@
       </div>
       <div>
         <label for="phone">Celular</label>
-        <input id="phone" name="phone" type="text" placeholder="11999999999">
+        <input id="phone" name="phone" type="text" placeholder="11999999999" required>
       </div>
       
     </div>
 
     <div>
-      <div>
-        <input type="hidden" name="transactionAmount" id="transactionAmount" value="0.1">
-        <input type="hidden" name="description" id="description" value="Nome do Produto">
-        <br>
         <button type="submit" onclick="form()">Pagar</button>
-      </div>
     </div>
   </form>
 
