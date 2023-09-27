@@ -124,11 +124,186 @@ body {
 }
 
 .pix {
-    width: 70%;
+    width: 80%;
     margin: 100px auto 0;
-    height: 500px;
+    height: 700px;
     background-color: #f1f3f7;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.pix form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pix .form {
+    width: 60%;
+}
+
+.pix input {
+    width: 100%;
+    border: none;
+    height: 20px;
+    padding-left: 5px;
+    box-shadow: 1px 1px 3px #302d2d;
+    border-radius: 3px;
+}
+
+.pix label {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.pix select {
+    border: none;
+    padding-left: 5px;
+    box-shadow: 1px 1px 3px #302d2d;
+    border-radius: 3px;
+}
+
+.email {
+    margin-top: 20px;
+}
+
+.document {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.identificationType {
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+
+.identificationType label {
+    width: 200px;
+}
+
+.identificationType select {
+    height: 20px;    
+}
+
+.identificationNumber {
+    width: 550px;
+}
+
+.document label {
+    margin-right: 10px;
+}
+
+.document select {
+    margin-right: 10px;
+}
+
+.document input {
+    height: 20px;
+}
+
+.postalCode {
+    margin-top: 20px;
+}
+
+.endereco {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.endereco label {
+    margin-right: 10px;
+}
+
+.endereco .address {
+    width: 68%;
+}
+
+.endereco .addressNumber {
+    width: 30%;
+}
+
+.endereco input:first-child {
+    margin-right: 10px;
+}
+
+.addressComplement {
+    margin-top: 20px;    
+}
+
+.city {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.city label {
+    margin-right: 10px;
+}
+
+.city input {
+    margin-right: 10px;
+}
+
+.city .addressLocality {
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+    margin-right: 10px;
+}
+
+.city .addressCity {
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+    height: 100%;
+    margin-right: 10px;
+}
+
+.city .state {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 5px;
+}
+
+.phone {
+    margin-top: 20px;
+}
+
+.pix button {
+    margin-top: 30px;
+    height: 60px;
+    width: 200px;
+    background-color: #f1f3f7;
+    border: 1px solid #939393;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.pix button:hover {
+    cursor: pointer;
+    transition: .3s ease;
+    background-color: #000000;
+    color: #f1f3f7;
+    border: 1px solid #f1f3f7;
 }
 
 .rodape {
@@ -267,6 +442,14 @@ body {
             width: 100%;
             padding-right: 50px;
         }
+    }
+
+    .pix {
+        width: 90%;
+    }
+
+    .pix .form {
+        width: 90%;
     }
     
     .lista div{
@@ -461,6 +644,35 @@ body {
 
     .botaoSpotify {
         display: none;
+    }
+
+    .pix {
+        width: 100%;
+        height: 750px;
+        border-radius: 0px;
+    }
+
+    .pix .document {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .pix .document label {
+        width: 100%;
+        margin-right: 10px;
+    }
+    
+    .identificationType {
+        width: 100%;
+    }
+    
+    .identificationType label {
+        width: 100%;
+    }
+
+    .identificationType select {
+        width: 80px;
     }
 }
 @media screen and (max-width: 780px) {
