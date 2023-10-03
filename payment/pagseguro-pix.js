@@ -80,7 +80,7 @@ function handleSubmit(e) {
   const phone = phoneValue.substring(3, 10);
   const phoneAreaValue = document.getElementById("phone").value;
   const phoneArea = phoneAreaValue.substring(0, 2);
-  const phoneCountry = "+55";
+  const phoneCountry = "55";
   const phoneType = "MOBILE";
   const state = document.getElementById("state").value;
   const quantidade = document.getElementById("quantity").value;
@@ -119,7 +119,7 @@ function handleSubmit(e) {
         amount: {
           value: preco * quantidade,
         },
-        expiration_date: dataAmanha,
+        //expiration_date: dataAmanha,
       },
     ],
     shipping: {
@@ -151,7 +151,7 @@ function sendRequest(requestData) {
     method: "POST",
     headers: {
       accept: 'application/json',
-      Authorization: '4B33935AF83F48369F8B8E10E71A8011',
+      Authorization: 'Bearer 4B33935AF83F48369F8B8E10E71A8011',
       "content-type": "application/json",
     },
     body: JSON.stringify(requestData),
